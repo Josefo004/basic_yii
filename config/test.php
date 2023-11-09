@@ -12,7 +12,7 @@ return [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
-    'language' => 'en-US',
+    'language' => 'es-Es',
     'components' => [
         'db' => $db,
         'mailer' => [

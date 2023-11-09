@@ -12,7 +12,7 @@ class ArticulosForm extends Model {
 
     public function rules() {
         return [
-            [['producto', 'precio'], 'required'],
+            [['producto', 'precio', 'cantidad'], 'required'],
             [['cantidad', 'precio'], 'number']
         ];
     }
@@ -20,7 +20,7 @@ class ArticulosForm extends Model {
     public function attributeLabels() {
         return [
             'producto' => 'Nombre del Producto',
-            'cantidad' => 'Precio del Producto',
+            'cantidad' => 'Cantidad del Producto',
             'precio' => 'Precio del Producto',
         ];
     }
